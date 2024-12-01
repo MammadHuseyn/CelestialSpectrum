@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)2024 by Huseyn Mammadli
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Homework 3: How websites work?</title>
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js"></script> 
+        <link rel="icon" type="image/png" href="media/ada_logo_color.png">    
+    </head>
+    <body>
+        <header class="navBar">
+            <div class="tooltip">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank"><img class="photo" src="media/baselogo.png"></a>  
+                <span class="tooltiptext">Try to click :D</span>
+            </div>
+            
+            <div class="navDiv">
+                <div class="logo"><a href="#">Celestial Spectrum</div>
+                <ul class="navLi">
+                    <li><a href="#" data-text="Home">Home</a></li>
+                    <li><a href="team-members.html" data-text="Team Members">Team Members</a></li>
+                    <li><a href="hour-of-code.html" data-text="Hour of Code event">Hour of Code event</a></li>
+                    <li><a href="web-project.html" data-text="Website Project" >Website Project</a></li>
+                    <li><a href="code-artist.html" data-text="Code Artist">Code Artist</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main id="indexdeki">
+            <img src="media/baselogo.png" id="logomuz">
+            <div class="container">
+
+                <div class="bottom-section" id="bottom-section">
+                    <!-- Text content will appear here -->
+                    <p id="top-text">Click images to get information about our team members!</p>
+                </div>
+
+                <div class="team_photos">
+                    <img src="media/huseyn.jpg" onclick="fillBottom('Huseyn Mammadli<br>Team Leader<br>First year Computer Science Student (BSCS 2028)<br>Registered ADA with Republic Science Medal (2x Bronze)<br>State Exam Center point: 686.9')">
+                    <img src="media/emil.jpg" onclick="fillBottom('Emil Karimzada<br>Team Member<br>First year Electrical and Electronics Engineering Student (BSEEE 2028)<br>EAPP Student')">
+                    <img src="media/nazrin.jpg" onclick="fillBottom('Nazrin Ulukhanli<br>Group Member<br>First year Mathematics Student(BSM 2028)<br>EAPP Student')">
+                    <img src="media/cavid.jpg" onclick="fillBottom('Javid Eynullayev<br>Group Member<br>Second year Computer Engineering Student(BCE 2027)<br>EAPP Student')">
+                </div>
+                
+                <div class="bottom-section" id="bottom-section">
+                    <!-- Text content will appear here -->
+                    <p id="bottom-text"></p>
+                </div>
+
+            </div>
+
+
+            
+
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Celestial Spectrum. All rights reserved.</p>
+            <nav>
+                <ul class="ayaq">
+                    <li><a id="foot" href="#contact" data-text="Contact">Contact</a></li>
+                </ul>
+                <a href="https://www.ada.edu.az/en" target="_blank"><img class="ada_logo" src="media/ada_logo_color.png" height="32.2px" width="52px"></a>
+            </nav>
+        </footer>
+
+        <div id="contactModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                
+                <p>Contact Information:</p>
+                <p>Email: huseynmammadli2007@gmail.com</p>
+                <p>Phone: +99470-600-78-38</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="contact.js"></script>    
+
+    </body>
+</html>

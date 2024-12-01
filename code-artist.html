@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)2024 Huseyn Mammadli
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Homework 3: Programming art</title>
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js"></script>   
+        <link rel="icon" type="image/png" href="media/ada_logo_color.png">      
+    </head>
+    <body>
+        <header class="navBar">
+            <div class="tooltip">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank"><img class="photo" src="media/baselogo.png"></a>  
+                <span class="tooltiptext">Try to click :D</span>
+            </div>
+            <div class="navDiv">
+                <div class="logo"><a href="#">Celestial Spectrum</div>
+                <ul class="navLi">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team-members.html">Team Members</a></li>
+                    <li><a href="hour-of-code.html">Hour of Code event</a></li>
+                    <li><a href="web-project.html">Website Project</a></li>
+                    <li><a href="code-artist.html">Code Artist</a></li>
+                </ul>
+            </div>
+        </header>
+
+
+        <main>
+            <label for="userNumber">Enter a numbers:<br></label>
+            <input type="number" id="degree" placeholder="Degree">
+            <input type="number" id="counter" placeholder="Counter (max i)">
+            <input type="number" id="step" placeholder="Steps: (i+= step)">
+            <label>Some interesting codes: 1 1 2 1 3 3 3 1 2 1 0 | 1 1 1 3 3 3 0 | 1 1 1 2 1 3 2 3 1 2 1 0</label>
+            <br>
+            <label for="color">Enter RGB color code:<br></label>    
+            <input type="text" id="color" placeholder="e.g., 255,0,0"><br>
+
+            <label for="forloop">Enter the inside of loop (1-forward, 2-left, 3-right, 0-set center):<br></label>
+            <input type="text" id="forloop" placeholder="e.g., 1 1 1 3 3 3 0"><br>
+
+            <p id="output"></p>
+            <!-- <input type="number" id="color" placeholder="Example 000..."><br><br> -->
+            <button onclick="DrawSpiral()">Submit</button>
+            <button onclick="ClearCanvas()">Clear Canvas</button>
+
+            <div style="text-align:center">
+                <canvas id="art-canvas" width="1500" height="1500">
+                    Sorry ... your browser doesn't support the HTML5 canvas element.
+                </canvas>        
+            </div>          
+
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Celestial Spectrum. All rights reserved.</p>
+            <nav>
+                <ul class="ayaq">
+                    <li><a id="foot" href="#contact" data-text="Contact">Contact</a></li>
+                </ul>
+                <img class="ada_logo" src="media/ada_logo_color.png" height="32.2px" width="52px">
+            </nav>
+        </footer>
+
+        <div id="contactModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                
+                <p>Contact Information:</p>
+                <p>Email: huseynmammadli2007@gmail.com</p>
+                <p>Phone: +99470-600-78-38</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="contact.js"></script>    
+    </body>
+</html>

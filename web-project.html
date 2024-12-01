@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)2024 Huseyn Mammadli
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Homework 3: Website project</title>
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js"></script>      
+        <link rel="icon" type="image/png" href="media/ada_logo_color.png">   
+    </head>
+    <body>
+        <header class="navBar">
+            <div class="tooltip">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank"><img class="photo" src="media/baselogo.png"></a>  
+                <span class="tooltiptext">Try to click :D</span>
+            </div>
+            <div class="navDiv">
+                <div class="logo"><a href="#">Celestial Spectrum</div>
+                <ul class="navLi">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team-members.html">Team Members</a></li>
+                    <li><a href="hour-of-code.html">Hour of Code event</a></li>
+                    <li><a href="web-project.html">Website Project</a></li>
+                    <li><a href="code-artist.html">Code Artist</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <main>
+            <!--            Əsas kodlarınızı bura yazın             -->
+            <div class="webproject">
+                <div class="webproject_txt">
+                    <h2>Welcome to Our Website Project</h2>
+                    <p>We are Team 47, and this is our website project for the Principles of Information Systems course. Our website features a fixed header and footer for easy navigation and consistent access to important information.</p>
+                
+                    <p>The header includes our logo and a navigation bar with links to other pages. It also contains a fun easter egg for you to discover!</p>
+                    <p>The footer provides contact information, ADA's logo, and copyright details. The contact information is displayed in a modal that pops up when you click the contact link in the footer.</p>
+                    <p>We utilized various CSS techniques, including Flexbox and Grid, 
+                        to make our website visually appealing and organized. While our 
+                        website is not fully responsive, we have made efforts to ensure it looks
+                         good on different devices. <i>It does not :(</i></p>
+                    <p>There 2 javascrip files. 1 mainly for the canvas drawing and other is for modal(which gives us contact information).</p>
+                </div>
+                <div class="webproject_img">
+                    <img src="media/csshtml.png" alt="Website Project" id="csshtml">
+                </div>
+                
+            </div>
+            <div class="pagesinproject">
+                <img src="media/baselogo.png" width="750px">
+                <ul>
+                    <p><b>Our website includes the following pages:</b></p>
+                    <li><strong>Home:</strong> Contains our pictures and information about our team and our accomplishments.</li>
+                    <li><strong>Team Members:</strong> Detailed information about each team member, describing us individually.</li>
+                    <li><strong>Hour of Code:</strong> A detailed report of our event, including pictures and descriptions.</li>
+                    <li><strong>Website Project:</strong> An overview of our project, including the technologies and techniques we used.</li>
+                    <li><strong>Code Artist:</strong> Interactive input boxes that use your input to create a canvas with JavaScript.</li>
+                </ul>
+            </div>
+        </main>
+        
+
+        <footer>
+            <p>&copy; 2024 Celestial Spectrum. All rights reserved.</p>
+            <nav>
+                <ul class="ayaq">
+                    <li><a id="foot" href="#contact" data-text="Contact">Contact</a></li>
+                </ul>
+                <img class="ada_logo" src="media/ada_logo_color.png" height="32.2px" width="52px">
+            </nav>
+        </footer>
+
+        <div id="contactModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <p>Contact Information:</p>
+                <p>Email: huseynmammadli2007@gmail.com</p>
+                <p>Phone: +99470-600-78-38</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="contact.js"></script>    
+    </body>
+</html>
