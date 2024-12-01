@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+#linkler a{
+    color: black;
+}
+
 .photo{
     height: 70px;
     width: 200px;
